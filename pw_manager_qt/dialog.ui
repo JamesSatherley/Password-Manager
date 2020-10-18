@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="addRemoveGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>781</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Add/Remove</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="6">
+     <widget class="QLabel" name="addButtonLabel">
+      <property name="text">
+       <string>Add the details</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QPushButton" name="addButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="usernameEdit"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="deleteButtonLabel">
+      <property name="text">
+       <string>Delete entry</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="deleteEdit"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="websiteEditLabel">
+      <property name="text">
+       <string>Enter website</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="deleteButton">
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="websiteEdit"/>
+    </item>
+    <item row="1" column="4" colspan="2">
+     <widget class="QLineEdit" name="passwordEdit"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="deleteEditLabel">
+      <property name="text">
+       <string>Enter deletion ID</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="emailEditLabel">
+      <property name="text">
+       <string>Enter email or username</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4" colspan="2">
+     <widget class="QLabel" name="passwordEditLabel">
+      <property name="text">
+       <string>Enter Password</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="detailsGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>781</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Details</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="websiteBrowserLabel">
+      <property name="text">
+       <string>Websites</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="emailBrowserLabel">
+      <property name="text">
+       <string>Emails/Usernames</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="passwordBrowserLabel">
+      <property name="text">
+       <string>Passwords</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTextBrowser" name="websiteBrowser"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QTextBrowser" name="usernameBrowser"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QTextBrowser" name="passwordBrowser"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="outputGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>781</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Output</string>
+   </property>
+   <widget class="QPushButton" name="saveButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>22</y>
+      <width>761</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>outputGroupBox</zorder>
+  <zorder>detailsGroupBox</zorder>
+  <zorder>addRemoveGroupBox</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
