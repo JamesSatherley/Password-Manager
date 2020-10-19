@@ -14,6 +14,8 @@ class Dialog : public QDialog
 public:
     Dialog(QWidget *parent = nullptr);
     ~Dialog();
+    void importFile();
+    void exportFile();
 
 private slots:
     void on_deleteButton_clicked();
