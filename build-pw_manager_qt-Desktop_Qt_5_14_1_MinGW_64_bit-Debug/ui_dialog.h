@@ -188,7 +188,7 @@ public:
         Dialog->setWindowTitle(QCoreApplication::translate("Dialog", "Dialog", nullptr));
         addRemoveGroupBox->setTitle(QCoreApplication::translate("Dialog", "Add/Remove", nullptr));
         addButtonLabel->setText(QCoreApplication::translate("Dialog", "Add the details", nullptr));
-        addButton->setText(QCoreApplication::translate("Dialog", "PushButton", nullptr));
+        addButton->setText(QCoreApplication::translate("Dialog", "Add", nullptr));
         deleteButtonLabel->setText(QCoreApplication::translate("Dialog", "Delete entry", nullptr));
         websiteEditLabel->setText(QCoreApplication::translate("Dialog", "Enter website", nullptr));
         deleteButton->setText(QCoreApplication::translate("Dialog", "Delete", nullptr));
